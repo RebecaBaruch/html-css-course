@@ -10,8 +10,10 @@
             <ul>
                 <li><a href="#aboutme"> About Me</a></li>
                 <li><a href="#services"> Services</a></li>
+                <li><a href="#workhistory"> Work History</a></li>
                 <li><a href="#skills"> Skills</a></li>
-                <li><a href="#contact"> Contact</a></li>
+                <li><a href="#contactme"> Contact Me</a></li>
+                <li><a href="#adress"> Adress</a></li>
             </ul>
         </nav>
 
@@ -37,14 +39,12 @@
                 </footer>
             </section>
     
-            <section>
+            <section id="aboutme">
                 <header>
                     <h2>About me</h2> 
                 </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates iure dolores libero cupiditate alias tenetur, aperiam repellat at quas? Velit illum porro tempore minus voluptatem possimus eum ut eos.</p>
-            </section>
-    
-            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates iure dolores libero cupiditate alias tenetur, aperiam repellat at quas? Velit illum porro tempore minus voluptatem possimus eum ut eos.</p>]
+
                 <dl>
                     <dt>Website</dt>
                     <dd>google.com</dd>
@@ -53,9 +53,10 @@
                     <dt>Twitter</dt>
                     <dd>@berrreca</dd>
                 </dl>
+
             </section>
     
-            <section>
+            <section id="services">
                 <h2>Services</h2> 
                 <ul>
                     <li>Lorem ipsum</li>
@@ -65,7 +66,7 @@
     
             </section>
     
-            <section>
+            <section id="workhistory">
                 <h2>Work History</h2>
                 <table>
                     <thead>
@@ -95,8 +96,60 @@
                     </tfoot>
                 </table>
             </section>
+
+            <section id="contactme">
+                <h2>Contact Me</h2>
+                <form action="doSomething.html" method="post">
+                    <!--the required attribute doesn't let the user pass with no info or wrong type of caracther for a specific kind of input-->
+
+                    <!--each part of a form is like a paragraph-->
+                    <p>
+                        <label>
+                            Name
+                            <input type="text" name="name" required/>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required/>
+                    </p>
+                    <p>
+                        <label for="whycontacting">Why Contacting</label>
+                        <select name="whycontacting" id="whycontacting">
+                            <option value="jobinterview">Job Interview</option>
+                            <option value="needcontractor">Need Contractor</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comments">Comments</label>
+                        <textarea name="comments" id="comments" rows="3"></textarea>
+                    </p>
+                    <fieldset>
+                        <legend>Best Contact Time</legend>
+                        <p>
+                            <label for="contacttime1">Morning</label>
+                            <input type="radio" name="cotacttime" id="contacttime1" value="morning" />
+                        </p>
+                        <p>
+                            <label for="contacttime2">Afternoon</label>
+                            <input type="radio" name="cotacttime" id="contacttime2" value="afternoon" />
+                        </p>
+                        <p>
+                            <label for="contacttime3">Evening</label>
+                            <input type="radio" name="cotacttime" id="contacttime3" value="evening" />
+                        </p>
+                    </fieldset>
+                    <p>
+                        <label for="asap">ASAP</label>
+                        <input type="checkbox" name="asap" id="asap">
+                    </p>
+                    <p>
+                        <button type="submit">Send</button>
+                    </p>
+                </form>
+            </section>
     
-            <section>
+            <section id="adress">
                 <h2>Mailing Address</h2>
                 <address>
                     111 Main St.
