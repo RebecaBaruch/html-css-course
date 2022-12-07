@@ -1,0 +1,62 @@
+/*universal selector
+*{
+    /* font-weight: bold; 
+}*/
+
+/*attribute selector
+[lang='es']
+[class~='skill-list']
+*/
+
+/*id selector
+ #skills 
+*/
+
+/*class selector
+.className
+p.className
+p.className.className2
+.className.className2
+*/
+
+/*grouping selectors
+ul, ol{}
+*/
+
+/*descendant combinators
+ul p{}
+*/
+
+/*child combinators
+div ol>li p{}
+*/
+
+/*next siblings combinators
+h2 + blockcode{}
+*/
+
+/* subsequence-sibling combinators
+h2 ~ p{}
+*/
+
+/*pseudo selectors
+li:nth-child(2n+1){}
+*/
+
+/*typed child-indexed pseudo-classes
+li:nth-of-type(2){}
+*/
+
+/*user action pseudo-classes
+a:visited{}
+a:hover{}
+input:focus{}
+*/
+
+/*negation pseudo-classes
+section:not(#skills){}
+*/
+
+/*pseudo-elements
+p::first-letter{}
+*/
