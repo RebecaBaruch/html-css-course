@@ -60,3 +60,44 @@ section:not(#skills){}
 /*pseudo-elements
 p::first-letter{}
 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+main {
+    max-width: 700px;
+    padding: 0 2rem;
+    border-left: solid 2px black;
+    border-right: solid 2px black;
+}
+
+img {
+    width: 40vw;
+}
+
+#skills ul li{
+    border: solid 1px black;
+    padding: 0 0.5rem;
+    margin: 0.5rem 0;
+    height: 30px;
+    overflow: auto;
+}
+
+.resume-fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+.resume-fieldset legend{
+    padding: 0;
+}
