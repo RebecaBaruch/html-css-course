@@ -13,7 +13,7 @@
                 <li><a href="#services"> Services</a></li>
                 <li><a href="#workhistory"> Work History</a></li>
                 <li><a href="#skills"> Skills</a></li>
-                <li><a href="#portfolio"></a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contactme"> Contact Me</a></li>
                 <li><a href="#adress"> Adress</a></li>
             </ul>
@@ -23,8 +23,8 @@
             <h1>Hey! My name is Rebeca Baruch.</h1>
             <article>
                 <h2>
-                    Be welcome, it's nice to meet <em>you!</em>  
-                    <aside>Just let it goes on!</aside> 
+                    Be welcome, nice to meet <em>you!</em>  
+                    <aside>Just let it go on!</aside> 
                 </h2>
             </article>
     
@@ -42,10 +42,11 @@
             </section>
     
             <section id="aboutme">
-                <header>
+                <header class="flex-header">
                     <h2>About me</h2> 
                 </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates iure dolores libero cupiditate alias tenetur, aperiam repellat at quas? Velit illum porro tempore minus voluptatem possimus eum ut eos.</p>]
+                <img src="src\img\berreca.jfif" alt="berreca's-image" class="my-picture">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptates iure dolores libero cupiditate alias tenetur, aperiam repellat at quas? Velit illum porro tempore minus voluptatem possimus eum ut eos.</p>
 
                 <dl>
                     <dt>Website</dt>
@@ -100,7 +101,7 @@
             </section>
 
             <section id="skills">
-                <h2>Skills</h2>
+                <h2 class="flex-header">Skills</h2>
                 <ul class="skill-list">
                     <li lang="es">
                         HTML - Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -116,34 +117,43 @@
 
             <section id="portfolio">
                 <h2>Portfolio</h2>
-                <img src="https://i.kym-cdn.com/entries/icons/mobile/000/016/038/img-1019555-eminem-5-musicas-do-eminem-que-so-os-maiores-fas-conhecem-ca_widelg.jpg" alt="eminem-photo" />
+                <img class="portfolio-img anchor" src="https://i.kym-cdn.com/entries/icons/mobile/000/016/038/img-1019555-eminem-5-musicas-do-eminem-que-so-os-maiores-fas-conhecem-ca_widelg.jpg" alt="eminem-photo" />
+
+                <img class="portfolio-img" src="https://i0.wp.com/culturalhistoryoftheinternet.com/wp-content/uploads/2020/11/cover2-1.jpg?resize=810%2C580&ssl=1" alt="kanye-west-photo">
+
+                <img class="portfolio-img" src="https://live-production.wcms.abc-cdn.net.au/5fe800f30c2b79d78f70abb62ac23a30?impolicy=wcms_crop_resize&cropH=562&cropW=1000&xPos=0&yPos=0&width=862&height=485" alt="drake-photo" />
+
+                <img class="portfolio-img" src="https://i.pinimg.com/736x/8f/ab/4a/8fab4a68ebbc8de5eeb845c34c45fffc.jpg" alt="snoop-dogg-photo" />
+
+                <img class="portfolio-img" src="https://i.pinimg.com/originals/af/f6/42/aff642f6780926f49a5953d272849494.jpg" alt="fifty-cents-photo" />
             </section>
 
             <section id="contactme">
                 <h2>Contact Me</h2>
+
                 <form action="doSomething.html" method="post">
                     <!--the required attribute doesn't let the user pass with no info or wrong type of caracther for a specific kind of input-->
 
                     <!--each part of a form is like a paragraph-->
-                    <p>
-                        <label>
+                    <p class="field">
+                        <label class="label-standard">
                             Name
                             <input type="text" name="name" required/>
                         </label>
                     </p>
-                    <p>
-                        <label for="email">Email</label>
+                    <p class="field">
+                        <label for="email" class="label-standard">Email</label>
                         <input type="email" name="email" id="email" required/>
                     </p>
-                    <p>
-                        <label for="whycontacting">Why Contacting</label>
+                    <p class="field">
+                        <label for="whycontacting" class="label-standard">Why Contacting</label>
                         <select name="whycontacting" id="whycontacting">
                             <option value="jobinterview">Job Interview</option>
                             <option value="needcontractor">Need Contractor</option>
                         </select>
                     </p>
-                    <p>
-                        <label for="comments">Comments</label>
+                    <p class="field">
+                        <label for="comments" class="label-standard">Comments</label>
                         <textarea name="comments" id="comments" rows="3"></textarea>
                     </p>
                     <fieldset class="resume-fieldset">
